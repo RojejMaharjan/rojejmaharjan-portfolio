@@ -7,50 +7,90 @@ import {
 const skills = [
   {
     icon: Network, title: "Networking", color: "blue",
-    items: ["MikroTik", "Routing & switching", "Firewall & NAT", "Network troubleshooting"],
+    items: ["MikroTik Network Engineering", "Enterprise Routing & switching", "Network Security & Firewall Architecture", "Network Diagnostics & troubleshooting"],
   },
   {
     icon: ShieldCheck, title: "Security", color: "green",
-    items: ["Network security", "Monitoring & analysis", "Security best practices", "Cybersecurity learning"],
+    items: ["Cybersecurity Architecture & Defense", "Threat Intelligence, Detection & Security Analytics", "Enterprise Security Operations & Continuous Monitoring", "Zero Trust Architecture & Security Hardening"],
   },
   {
     icon: Terminal, title: "Linux & Servers", color: "silver",
-    items: ["Ubuntu & Linux", "Windows Server", "Docker", "Virtualization"],
+    items: ["Linux System Engineering & Administration", "Windows Server Infrastructure & Identity Management", "Containerization, Docker & Deployment Orchestration", "Virtualization Architecture & Infrastructure Optimization"],
   },
   {
     icon: Cloud, title: "Cloud & DevOps", color: "purple",
-    items: ["AWS (EC2, S3, ECR)", "Cloudflare", "Git & GitHub", "CI/CD fundamentals", "Azure"],
+    items: ["AWS Cloud Infrastructure Engineering & Architecture", "Cloudflare Edge Security, DNS & Global Traffic Management", "Git Version Control & GitHub & Infrastructure Collaboration", "CI/CD Pipeline Engineering & Deployment Automation", "Microsoft Azure Cloud Infrastructure & Identity Management "],
   },
   {
     icon: Activity, title: "Monitoring", color: "orange",
-    items: ["LibreNMS", "ntopng", "Grafana", "SNMP & Prometheus", "Cacti"],
+    items: ["Enterprise Network Observability & Infrastructure Monitoring", "Deep Packet Inspection, Traffic Intelligence & Network Analytics", "Infrastructure Visualization & Real-Time Performance Analytics", "SNMP-Based Network Telemetry & Prometheus Metrics Engineering", "Network Performance Trending,Capacity Planning & Historical Analysis"],
   },
   {
     icon: Code2, title: "Other Tools", color: "cyan",
-    items: ["Microsoft 365 & Entra ID", "VPN administration", "Python fundamentals", "IT support"],
+    items: ["Microsoft 365 Administration, Entra ID & Enterprise Identity Governance", "Secure VPN Architecture, Remote Access & Network Connectivity Management", "Python Automation, Infrastructure Scripting & Security Operations", "IT Operations Engineering, Advanced Troubleshooting & Enterprise Service Management"],
   },
 ];
 
 const projects = [
   {
-    icon: Network, title: "Network Monitoring with LibreNMS", number: "01",
-    description: "Building a central view of network devices, availability, interfaces, and system health using SNMP-based monitoring.",
-    tags: ["LibreNMS", "SNMP", "Linux"],
+    icon: Network,
+    title: "Enterprise Network Observability & Infrastructure Intelligence",
+    number: "01",
+    description:
+      "Engineering a centralized network observability ecosystem that integrates infrastructure discovery, SNMP telemetry, real-time traffic analysis, performance visualization, and proactive fault detection. Focused on cross-layer network visibility, interface utilization, device availability, system health analytics, historical performance trends, and data-driven infrastructure optimization across interconnected environments.",
+    tags: [
+      "Network Observability",
+      "LibreNMS",
+      "ntopng",
+      "Grafana",
+      "SNMP & Prometheus",
+      "Infrastructure Analytics",
+    ],
   },
   {
-    icon: Radar, title: "MikroTik Network Administration", number: "02",
-    description: "Hands-on routing, NAT, access troubleshooting, and connectivity between separate private network ranges.",
-    tags: ["MikroTik", "Routing", "Security"],
+    icon: Radar,
+    title: "Network Engineering, Traffic Control & Security Architecture",
+    number: "02",
+    description:
+      "Engineering and administering routed network environments with MikroTik RouterOS, implementing inter-subnet connectivity, firewall policies, NAT, traffic control, and controlled network access. Focused on secure traffic flows, network boundary protection, connectivity resilience, routing optimization, fault isolation, and strengthening the security posture of interconnected infrastructure.",
+    tags: [
+      "MikroTik RouterOS",
+      "Advanced Routing",
+      "Firewall & NAT",
+      "Traffic Engineering",
+      "Network Segmentation",
+      "Infrastructure Security",
+    ],
   },
   {
-    icon: Cloud, title: "AWS & Container Deployment", number: "03",
-    description: "Learning and implementing application deployment workflows with EC2, Docker, ECR, and S3.",
-    tags: ["AWS", "Docker", "Linux"],
+    icon: Cloud,
+    title: "Cloud Infrastructure Engineering & Containerized Deployment",
+    number: "03",
+    description:
+      "Building and deploying cloud-hosted application environments using AWS compute infrastructure, container registries, object storage, and Docker-based workloads. Focused on container image lifecycle management, application deployment workflows, Linux server administration, cloud resource configuration, service connectivity, deployment troubleshooting, and establishing secure, maintainable infrastructure for application delivery.",
+    tags: [
+      "AWS EC2",
+      "Amazon ECR",
+      "Amazon S3",
+      "Docker",
+      "Linux Engineering",
+      "Cloud Infrastructure",
+    ],
   },
   {
-    icon: Globe2, title: "Website Deployment", number: "04",
-    description: "Developing and deploying web projects, configuring domains, and learning secure cloud hosting workflows.",
-    tags: ["Next.js", "Git", "Cloud"],
+    icon: Globe2,
+    title: "Web Infrastructure, DNS Engineering & Secure Global Delivery",
+    number: "04",
+    description:
+      "Developing and deploying modern web applications through version-controlled workflows and cloud-based delivery infrastructure. Integrating application builds, Git-based source management, DNS configuration, domain connectivity, HTTPS/TLS, and Cloudflare edge services to establish reliable public access. Focused on deployment reliability, secure web delivery, domain resolution, production troubleshooting, and end-to-end application availability.",
+    tags: [
+      "Next.js",
+      "Git & GitHub",
+      "Cloudflare",
+      "DNS Architecture",
+      "HTTPS & TLS",
+      "Cloud Deployment",
+    ],
   },
 ];
 
@@ -78,7 +118,7 @@ export default function Home() {
     <main>
       <header className="topbar">
         <a className="brand" href="#home" aria-label="Rojej Maharjan home">
-          <span className="brand-mark">Rojej Maharjan</span><span>Rojej Maharjan</span>
+          <span className="brand-mark">Rojej Maharjan</span>
         </a>
         <nav className="nav" aria-label="Main navigation">
           <a className="active" href="#home">Home</a>
@@ -198,7 +238,7 @@ export default function Home() {
       </section>
 
       <footer className="footer section-wrap" id="footer">
-        <a className="brand" href="#home"><span className="brand-mark">RM</span><span>Rojej Maharjan</span></a>
+        <a className="brand" href="#home"><span className="brand-mark">Rojej Maharjan</span></a>
         <p>Networks. Security. Continuous learning.</p>
         <div className="footer-links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
         <span className="copyright">© {new Date().getFullYear()} Rojej Maharjan</span>
