@@ -138,7 +138,7 @@ export default function Home() {
           <p className="hero-name">I’m Rojej Maharjan.</p>
           <p className="hero-text">
             Networking is the backbone of modern technology and has always been my greatest passion. With expertise spanning network engineering,
-            infrastructure management, cybersecurity, server administration, and application support, I Focus on solving complex challenges and building
+            infrastructure management, cybersecurity, server administration, and application support, focus on solving complex challenges and building
             secure, reliable, and resilient IT environments.
     
           </p>
