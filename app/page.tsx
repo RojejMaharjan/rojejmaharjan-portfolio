@@ -233,7 +233,7 @@ export default function Home() {
         <div className="contact-panel">
           <div className="contact-orb"><Workflow size={34} /></div>
           <div><p className="kicker">HAVE A PROJECT IN MIND?</p><h2>Let’s build something <span>reliable.</span></h2><p className="contact-copy">Open to professional connections, IT projects, and opportunities to learn and contribute.</p></div>
-          <a className="button button-primary" href="mailto:hello@rojejmaharjan.com.np">Start a conversation <ArrowUpRight size={17} /></a>
+          <a className="button button-primary" href="mailto:rojej.maharjan@gmail.com">Start a conversation <ArrowUpRight size={17} /></a>
         </div>
       </section>
 
